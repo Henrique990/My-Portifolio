@@ -1,0 +1,226 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Bangers', cursive; */
+
+  /* colocar bordas solidas vermelhas */
+  /* outline: 1px solid rgb(37, 251, 4); */
+}
+body {
+  background: black;
+  color: aliceblue;
+  background-image: url(/img/matrix-edit.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* font-family: "Open Sans", sans-serif; */
+}
+hr {
+  /* aumentar tamanho da linha */
+  width: 100%;
+  
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  text-decoration: none;
+  /* fixar header na tela */
+  position: fixed;
+  /* top: 0; */
+  /* left: 0; */
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+
+  
+}
+
+.header p {
+  font-size: 2rem;
+  color: red;
+}
+.header .xicara{
+  display: flex;
+  align-items: center;
+  
+}
+.header .xicara img {
+  width: 3rem;
+}
+
+.menu {
+  display: flex;
+  /* alinhar items hozontalmente */
+}
+marquee {
+  /* font-size: 1.5rem; */
+  margin-top: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+
+  z-index: 1;
+}
+.container {
+  margin-top: 11vh;
+  margin-bottom: 2vh;    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+.container .glass-box {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  backdrop-filter: blur(4px);
+
+}
+.container2 {
+  margin-top: 2vh;  
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container3 {
+  margin-top: 2vh; 
+  margin-bottom: 2vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text01 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.text02 {
+  font-size: 8rem;
+  color: hsl(0, 100%, 60%);
+  font-family: 'Bangers', cursive;
+}
+
+.text03 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.text03 img {
+  width: 5rem;
+}
+
+.button button {
+  margin-top: 1vh;
+  background: red;
+  color: aliceblue;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  /* border: none; */
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 30px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.estudo {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.slider {
+  max-width: 1150px;
+  display: flex;
+}
+
+.slider .card {
+  background: black;
+  flex: 1;
+  margin: 10px;
+}
+
+.slider .card .img {
+  height: 200px;
+  width: 100%;
+}
+
+.slider .card .img img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+}
+
+/* Usar @media */
+@media (max-width: 600px) {
+  .header {
+    padding: 1rem;
+  }
+  .header p {
+    align-items: center;
+    font-size: 1.1rem;
+    color: red;
+  }
+  .header .xicara img {
+    width: 2.5rem;
+  }
+  nav .menu {
+    /* margin-top: 3px; */
+  }
+  nav .menu a img {
+    width: 2rem;
+  }
+  .text01 {
+    font-size: 1.5rem;
+  }
+  .text02 {
+    font-size: 4rem;
+  }
+  /* .button {
+    margin-top: 30px;
+    margin-bottom: -60px;
+  } */
+  .container2 .grid2 .text03 {
+    font-size: 1rem;
+  }
+  .container2 .grid2 .text03 img {
+    width: 2rem;
+  }
+  .slider {
+    flex-direction: column;
+  }
+}
+/* se screen maior que 1000px coloque space-around */
+@media (min-width: 1000px) {
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+  
+
