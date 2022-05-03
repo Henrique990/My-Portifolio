@@ -9,6 +9,18 @@
   /* colocar bordas solidas vermelhas */
   /* outline: 1px solid rgb(37, 251, 4); */
 }
+/* #img:foxus {
+  animation: treme 0.1s infinite;
+  animation-iteration-count: 3;
+} */
+@keyframes treme {
+  0% {margin-left: 0;}
+  25% {margin-left: 5px;}
+  50% {margin-left: 0;}
+  75% {margin-left: -5px;}
+  100% {margin-left: 0;}
+}
+
 body {
   background: black;
   color: aliceblue;
@@ -59,10 +71,16 @@ a {
 .header .xicara img {
   width: 3rem;
 }
+.header .xicara p {
+  position: relative;
+  bottom: -0.8rem;
+  margin-left: 0.5rem;
+}
 
 .menu {
   display: flex;
-  /* alinhar items hozontalmente */
+  position: relative;
+  bottom: -0.3rem;
 }
 marquee {
   /* font-size: 1.5rem; */
@@ -189,9 +207,7 @@ marquee {
   .header .xicara img {
     width: 2.5rem;
   }
-  nav .menu {
-    /* margin-top: 3px; */
-  }
+  
   nav .menu a img {
     width: 2rem;
   }

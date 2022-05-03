@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PORTIFOLIO</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -17,8 +20,8 @@
     <header class="header">
       <div class="xicara">
         <img src="/img/xicara-de-cafe (1).png" alt="" />
-        <p id="text01"> SEJA BEM VINDO</p>
-    </div>
+        <p id="text01">SEJA BEM VINDO</p>
+      </div>
       <nav>
         <ul class="menu">
           <a id="whatsApp" onclick="whatsapp()" href="/"
@@ -45,7 +48,7 @@
       <div class="container">
         <!--- container -->
         <div>
-          <img src="/img/Ellipse 1.png" alt="" />
+          <img id="img" src="/img/Ellipse 1.png" alt="" />
         </div>
         <div class="glass-box">
           <!-- Glass Box -->
@@ -62,8 +65,32 @@
           >
         </div>
       </div>
-      <button onclick="translateText()" id="translate">Traduzir</button>
       <!-- end container-->
+
+      <hr />
+      <hr />
+
+      <div class="container-button">
+        <h1>Botões para teste</h1>
+        <div>
+          <button onclick="translateText()" id="translate">Traduzir</button>
+          <button onclick="restoreTranslate()">restore Translate</button>
+        </div>
+        <div>
+          <button onclick="vibrate()" id="translate2">Vibrar Imagem</button>
+          <button onclick="stopVibrate()">stopVibrate</button>
+        </div>
+        <div>
+          <button onclick="changeFont()" id="font-color">font blue</button>
+          <button onclick="restoreFont()" id="font-color2">font red</button>
+        </div>
+        <div>
+          <button onclick="restorePage()">restore page</button>
+        </div>
+        
+        
+
+      </div>
 
       <hr />
       <hr />
@@ -158,7 +185,8 @@
             <p>App to calculate compound interest</p>
             <div class="bnt">
               <a href="/Twitter-Responsivo/index.html">
-              <button>Test Project</button></a>
+                <button>Test Project</button></a
+              >
             </div>
           </div>
         </div>

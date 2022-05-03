@@ -17,7 +17,48 @@ function translateText() {
     document.getElementById("text04").innerHTML = "PROJECTS";
     document.getElementById("text05").innerHTML = "MY SKILLS";
     document.getElementById("text06").innerHTML = "PROJECTS";
-    // click pela segunda vez
-
-
 }
+// restaurar tradução
+function restoreTranslate() {
+    document.getElementById("text01").innerHTML = "Seja Bem Vindo";
+    document.getElementById("text02").innerHTML = "Eu tenho 24 anos, estudo programação web, sou apaixonado por tecnologia e ferramentas online. Busco novos desafios e busco uma carreira no mercado web.";
+    document.getElementById("text03").innerHTML = "Olá, eu sou <u>Henrique</u> <br /> e isso é meu";
+    document.getElementById("text04").innerHTML = "PROJETOS";
+    document.getElementById("text05").innerHTML = "SKILLS";
+    document.getElementById("text06").innerHTML = "PROJETOS";
+}
+// fazer imagem vibrar
+function vibrate() {
+    document.getElementById("img").style.animation = "treme 0.1s infinite";
+}
+// fazer imagem parar de vibrar
+function stopVibrate() {
+    document.getElementById("img").style.animation = "";
+}
+// fazer font mudar de cor
+function changeFont() {
+    document.querySelector(".header #text01").style.color = "blue";
+
+    document.querySelector(".container .text02").style.color = "blue";
+
+    // selecionar class button e id text04 e mudar a cor
+    document.querySelector(".button button").style.background = "blue";
+    // document.getElementById("text04").style.color = "blue";
+}
+// restaurar font
+function restoreFont() {
+    document.querySelector(".header #text01").style.color = "red";
+
+    document.querySelector(".container .text02").style.color = "red";
+
+    // selecionar class button e id text04 e mudar a cor
+    document.querySelector(".button button").style.background = "red";
+    // document.getElementById("text04").style.color = "black";
+}
+// restaurar pagina ao clicar no botão
+function restorePage() {
+    location.reload();
+}
+
+
+
